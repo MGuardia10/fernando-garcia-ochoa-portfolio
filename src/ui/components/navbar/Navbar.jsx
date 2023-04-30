@@ -11,7 +11,7 @@ export const Navbar = () => {
   return (
     <header className='bg-slate-50 sticky top-0 z-50 shadow-md'>
       <nav>
-        <div className='md:py-4 flex items-center font-medium justify-between w-11/12 m-auto p-5'>
+        <div className='w-5/6 m-auto py-5 flex items-center font-medium justify-between md:w-11/12 md:py-4'>
           <div className='z-40 md:w-auto w-full flex justify-between items-center py-1'>
             <Link to='/' className='font-serif md:text-lg cursor-pointer text-base'>Fernando García-Ochoa</Link>
 
