@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { NavLinks } from './NavLinks'
 import { Socials } from './Socials'
 import { ThemeButton } from './ThemeButton'
+import { LanguageButton } from './LanguageButton'
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -24,6 +25,7 @@ export const Navbar = () => {
             </div>
           </div>
           <ul className='md:flex hidden uppercase items-center dark:text-white'>
+            <LanguageButton />
             <ThemeButton />
             <NavLinks setOpen={() => setOpen(!open)} />
           </ul>
@@ -38,9 +40,9 @@ export const Navbar = () => {
             <div className='w-11/12 p-5 m-auto'>
               <NavLinks setOpen={() => setOpen(!open)} />
               <Socials setOpen={() => setOpen(!open)} />
-              <div className='flex justify-start pt-10 gap-x-10'>
+              <div className='flex justify-start pt-10 gap-x-8'>
                 <ThemeButton />
-                <ThemeButton />
+                <LanguageButton />
               </div>
             </div>
           </ul>

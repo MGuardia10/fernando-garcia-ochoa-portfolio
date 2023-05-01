@@ -1,4 +1,3 @@
-
 export const links = [
   {
     name: 'Home',
@@ -6,7 +5,7 @@ export const links = [
     submenu: false
   },
   {
-    name: 'Proyectos',
+    name: 'Projects',
     url: '',
     submenu: true,
     sublinks: [

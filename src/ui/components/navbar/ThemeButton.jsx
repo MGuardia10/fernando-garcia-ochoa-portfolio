@@ -28,7 +28,7 @@ export const ThemeButton = () => {
         type='button'
         className='bg-gray-200 dark:bg-[#292C2F] md:bg-transparent md:dark:bg-transparent
         text-gray-800 dark:text-gray-100 md:hover:bg-gray-200 md:dark:hover:bg-[#292C2F]
-        rounded-sm duration-200 p-4 md:p-2.5 '
+        rounded-sm duration-200 px-5 md:p-3 md:mr-5 md:ml-2.5'
       >
         <BsMoonFill className={`w-5 h-5 md:w-4 md:h-4 ${(darkMode) ? 'hidden' : ''}`} />
         <BsSunFill className={`w-5 h-5 md:w-4 md:h-4 ${(darkMode) ? '' : 'hidden'}`} />

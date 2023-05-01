@@ -2,17 +2,29 @@ import { links } from '../../data/myLinks'
 import { Link } from 'react-router-dom'
 import { NavDropdown } from './NavDropdown'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export const NavLinks = ({ setOpen }) => {
   const [heading, setHeading] = useState('')
+  const { i18n } = useTranslation()
+
+  if (i18n.language === 'es') {
+    links[0].name = 'Inicio'
+    links[1].name = 'Proyectos'
+    links[3].name = 'Galería'
+  } else {
+    links[0].name = 'Home'
+    links[1].name = 'Projects'
+    links[3].name = 'Gallery'
+  }
 
   return (
     <>
       {
-        links.map(({ name, url, idRef, submenu, sublinks }) => (
+        links.map(({ name, url, submenu, sublinks }) => (
           <div key={name}>
             <li onClick={() => {
-              const noClickableLinks = ['Proyectos', 'Crossover']
+              const noClickableLinks = ['Projects', 'Crossover']
               if (!noClickableLinks.includes(name)) {
                 const open = setOpen
                 open()

@@ -1,0 +1,8 @@
+{
+    "subtitle": "Workflow",
+    "intro": "Generalmente consiste de las siguientes fases:",
+    "li-1": "1. Diseño: Se toma el diseño del cliente o se realizado mano a mano con él.",
+    "li-2": "2. Dibujo 2D: Se realizan los planos necesarios para la ejecución del modelado poligonal.",
+    "li-3": "3. Modelado 3D: Se realiza el modelado poligonal.",
+    "li-4": "4. Renderizado y postproducción: Se crean imágenes a partir del modelo 3D. Para ello se tiene en cuenta la idea que se quiere transmitir y el estilo del proyecto."
+}
