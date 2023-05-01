@@ -9,7 +9,7 @@ export const NavLinks = ({ setOpen }) => {
   return (
     <>
       {
-        links.map(({ name, url, submenu, sublinks }) => (
+        links.map(({ name, url, idRef, submenu, sublinks }) => (
           <div key={name}>
             <li onClick={() => {
               const noClickableLinks = ['Proyectos', 'Crossover']
@@ -20,17 +20,14 @@ export const NavLinks = ({ setOpen }) => {
             }}
             >
               <div
-                className='text-xl border-b text-left md:text-base md:cursor-pointer md:border-0 group'
+                className='text-xl border-b dark:border-b-gray-400 text-left md:text-base md:cursor-pointer md:border-0 group'
                 onClick={() => {
                   (heading !== name)
                     ? setHeading(name)
                     : setHeading('')
                 }}
               >
-                <Link
-                  to={url}
-                  className='w-full py-2 inline-block font-lato md:pl-5'
-                >
+                <Link to={url} className='w-full py-2 inline-block font-lato dark:text-white md:pl-5'>
                   {name}
                 </Link>
 
@@ -48,7 +45,7 @@ export const NavLinks = ({ setOpen }) => {
                       <Link
                         to={slinks.link}
                         key={slinks.name}
-                        className='flex font-lato p-2'
+                        className='flex font-lato dark:text-white p-2'
                         onClick={setOpen}
                       >
                         {slinks.name}

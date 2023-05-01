@@ -7,7 +7,7 @@ export const links = [
   },
   {
     name: 'Proyectos',
-    url: '/#projects',
+    url: '',
     submenu: true,
     sublinks: [
       { name: '001_Catálogo de Domesticidad', link: 'projects/001_catalogo_domesticidad' },
@@ -19,7 +19,7 @@ export const links = [
   },
   {
     name: 'Crossover',
-    url: '/#crossover',
+    url: '',
     submenu: true,
     sublinks: [
       { name: '006_Yogijen Poketto', link: 'projects/006_yogijen_poketto' },

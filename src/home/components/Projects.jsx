@@ -1,6 +1,9 @@
 
 export const Projects = () => {
   return (
-    <div>Projects</div>
+    <section id='projects'>
+
+      <h1>Hola mUndo</h1>
+    </section>
   )
 }

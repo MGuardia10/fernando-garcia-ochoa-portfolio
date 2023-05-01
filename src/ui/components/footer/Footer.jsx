@@ -19,7 +19,7 @@ export const socialsFooter = [
 export const Footer = () => {
   const year = new Date().getFullYear()
   return (
-    <section className='font-lato bg-black flex '>
+    <section className='font-lato bg-[#171818] dark:bg-[#1b1c1c] flex '>
       <div className='w-5/6 m-auto md:w-11/12 md:flex md:flex-row-reverse md:justify-between '>
         <div className='flex place-items-center justify-center m-8 gap-8'>
           {
@@ -34,9 +34,9 @@ export const Footer = () => {
 
         <hr className='rounded-full md:hidden' />
 
-        <div className='text-white m-8 flex flex-col place-items-center justify-center md:place-items-start'>
-          <h3 className='font-bold'>All Rights Reserved.</h3>
-          <p className=''>F8a Arquitecture @{year}</p>
+        <div className='text-white font-lato m-8 flex flex-col place-items-center justify-center md:place-items-start'>
+          <h3 className='font-bold '>All Rights Reserved.</h3>
+          <p>F8a Arquitecture @{year}</p>
         </div>
       </div>
     </section>

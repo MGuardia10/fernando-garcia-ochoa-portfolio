@@ -4,15 +4,22 @@ export default {
     './index.html',
     './src/**/*.{js,ts,jsx,tsx}'
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
-        lato: ['lato']
+        lato: ['lato'],
+        BASKVILL: ['BASKVILL']
       },
       screens: {
         md: '900px'
+      },
+      hueRotate: {
+        248: '248deg'
       }
     }
   },
-  plugins: []
+  plugins: [
+    require('flowbite/plugin')
+  ]
 }
