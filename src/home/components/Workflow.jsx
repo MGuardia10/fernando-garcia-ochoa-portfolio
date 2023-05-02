@@ -5,10 +5,10 @@ export const Workflow = () => {
   const { t } = useTranslation(['workflow'])
 
   return (
-    <section className='py-20 bg-slate-50 dark:bg-[#171818]'>
+    <section className='py-5 md:py-14 bg-slate-50 dark:bg-[#171818]'>
       <div className='w-5/6 m-auto md:w-full md:flex md:justify-between gap-x-5'>
         <div className='md:w-1/2 m-auto md:flex md:flex-col '>
-          <div className='mb-5 m-auto md:mb-0 md:w-5/6 xl:w-4/6'>
+          <div className='mb-8 m-auto md:mb-0 md:w-5/6 xl:w-4/6'>
 
             <h3 className='font-serif text-left text-xl uppercase dark:text-white'>
               {t('subtitle')}
@@ -36,7 +36,7 @@ export const Workflow = () => {
           </div>
         </div>
 
-        <div className='md:w-1/2 md:m-auto'>
+        <div className='flex md:w-1/2 md:m-auto'>
           <img
             src={ImgWorkflow}
             alt='interior proyecto Yogijen Poketto'

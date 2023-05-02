@@ -22,7 +22,7 @@ export const LanguageButton = () => {
         type='button'
         className='bg-gray-200 dark:bg-[#292C2F] md:bg-transparent md:dark:bg-transparent
           text-gray-800 dark:text-gray-100 md:hover:bg-gray-200 md:dark:hover:bg-[#292C2F]
-          rounded-sm duration-200 px-5 py-4 md:py-2 md:px-3'
+          rounded-sm duration-200 px-4 py-3 md:py-2 md:px-3'
       >
         <p className={`font-mono font-bold text-lg md:text-base text-center ${(i18n.language === 'es') ? '' : 'hidden'}`}>En</p>
         <p className={`font-mono font-bold text-lg md:text-base text-center ${(i18n.language === 'en') ? '' : 'hidden'}`}>Es</p>

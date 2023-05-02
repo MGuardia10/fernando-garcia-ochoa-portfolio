@@ -1,4 +1,4 @@
-import { Hero, AboutMe, Workflow } from '../components'
+import { Hero, AboutMe, Workflow, Projects, Crossover } from '../components'
 
 export const HomePage = () => {
   return (
@@ -9,14 +9,15 @@ export const HomePage = () => {
       {/* About Me Section */}
       <AboutMe />
 
-      {/* Projects Section */}
-      {/* <Projects /> */}
-
-      {/* Crossover Section */}
-      {/* <Crossover /> */}
-
       {/* Workflow section */}
       <Workflow />
+
+      {/* Projects Section */}
+      <Projects />
+
+      {/* Crossover Section */}
+      <Crossover />
+
     </div>
   )
 }

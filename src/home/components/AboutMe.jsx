@@ -1,13 +1,13 @@
 import { useTranslation } from 'react-i18next'
-import ImgAboutMe from '../../assets/home/aboutme.jpg'
+import ImgAboutMe from '../../assets/home/aboutme.webp'
 import { CVButton } from '../../ui/components/navbar/CVButton'
 
 export const AboutMe = () => {
   const { t } = useTranslation(['aboutMe'])
 
   return (
-    <section className='my-15 md:py-20 bg-slate-50 dark:bg-[#171818]'>
-      <h2 className='w-5/6 m-auto font-BASKVILL text-left text-2xl uppercase my-10 md:w-11/12 md:text-4xl xl:text-5xl dark:text-white'>{t('title')}</h2>
+    <section className='md:py-20 bg-slate-50 dark:bg-[#171818]'>
+      <h2 className='w-5/6 m-auto font-BASKVILL text-left text-2xl uppercase py-5 md:my-10 md:w-11/12 md:text-4xl xl:text-5xl dark:text-white'>{t('title')}</h2>
       <div className='flex flex-col m-auto mb-8 w-5/6 md:w-full md:flex-row md: md:justify-center md:place-items-center md:gap-x-5'>
         <div className='mb-5 md:w-1/2 md:m-auto'>
           <img

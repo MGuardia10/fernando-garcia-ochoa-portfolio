@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import BlackLogo from '../../assets/home/logo_negro.webp'
 import WhiteLogo from '../../assets/home/logo_blanco2.png'
-import ImgHome from '../../assets/home/maqueta_home.jpg'
+import ImgHome from '../../assets/home/maqueta_home.webp'
 import { ThemeContext } from '../../context/themeContext'
 import { useTranslation } from 'react-i18next'
 
