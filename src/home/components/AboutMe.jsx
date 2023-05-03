@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next'
 import ImgAboutMe from '../../assets/home/aboutme.webp'
 import { CVButton } from '../../ui/components/navbar/CVButton'
+import { TbLocationFilled } from 'react-icons/tb'
+import { Link } from 'react-router-dom'
 
 export const AboutMe = () => {
   const { t } = useTranslation(['aboutMe'])
@@ -25,7 +27,18 @@ export const AboutMe = () => {
             <p className='mt-2 font-lato text-lg dark:text-gray-400'>
               {t('second-paragraph')}
             </p>
-            <CVButton />
+
+            <div className='flex mt-6 gap-3'>
+              <CVButton />
+              <Link
+                to='/gallery'
+                preventScrollReset={false}
+                className='bg-gray-100 hover:bg-gray-200 text-gray-900 dark:text-white dark:bg-[#292C2F] dark:hover:bg-[#4d5052] text-sm md:text-base duration-200 rounded-sm px-4 font-lato inline-flex items-center'
+              >
+                <TbLocationFilled className='mr-2' />
+                <span>{t('gallery-button')}</span>
+              </Link>
+            </div>
           </div>
 
         </div>

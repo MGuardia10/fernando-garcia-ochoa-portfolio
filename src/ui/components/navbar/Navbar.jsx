@@ -10,7 +10,7 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className='bg-slate-100 dark:bg-[#1b1c1c] sticky top-0 z-50 shadow-md'>
+    <header className='bg-slate-100 dark:bg-[#1b1c1c] sticky top-0 z-40 shadow-md'>
       <nav>
         <div className='w-5/6 m-auto py-5 flex items-center font-medium justify-between md:w-11/12 md:py-4'>
           <div className='z-40 md:w-auto w-full flex justify-between items-center py-1'>

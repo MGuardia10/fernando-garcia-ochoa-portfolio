@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
@@ -9,13 +9,21 @@ import { RxCross1 } from 'react-icons/rx'
 
 export const GridProjects = ({ name, alt, imgLink, link, gridClass }) => {
   const { t } = useTranslation([name])
-  const [isLike, setisLike] = useState(localStorage.getItem(name) || false)
+
+  const [isLike, setisLike] = useState(localStorage.getItem(name))
   const [open, setopen] = useState(false)
 
   const onClickLikeButton = () => {
     setisLike(!isLike)
-    localStorage.setItem(name, !isLike)
   }
+
+  useEffect(() => {
+    if (isLike) {
+      localStorage.setItem(name, isLike)
+    } else {
+      localStorage.removeItem(name)
+    }
+  }, [isLike])
 
   const handleOpenModalMobile = () => {
     setopen(!open)
