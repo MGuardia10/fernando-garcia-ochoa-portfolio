@@ -1,27 +1,11 @@
-import { TfiLinkedin } from 'react-icons/tfi'
-import { AiOutlineInstagram } from 'react-icons/ai'
-import { MdEmail } from 'react-icons/md'
 import { useTranslation } from 'react-i18next'
-export const socialsFooter = [
-  {
-    link: 'https://www.linkedin.com/in/fernando-garc%C3%ADa-ochoa-ruedas-026838244',
-    icon: <TfiLinkedin className='text-white h-6 w-6 md:h-5 md:w-5' />
-  },
-  {
-    link: 'https://instagram.com/fg_8a?igshid=ZDdkNTZiNTM=',
-    icon: <AiOutlineInstagram className='text-white h-6 w-6 md:h-5 md:w-5' />
-  },
-  {
-    link: 'mailto:garciaochoaf@gmail.com',
-    icon: <MdEmail className='text-white h-6 w-6 md:h-5 md:w-5' />
-  }
-]
+import { socialsFooter } from '../../data'
 
 export const Footer = () => {
   const { t } = useTranslation(['footer'])
   const year = new Date().getFullYear()
   return (
-    <section className='font-lato bg-[#171818] dark:bg-[#1b1c1c] flex '>
+    <section className='font-lato bg-[#171818] dark:bg-[#1b1c1c] flex'>
       <div className='w-5/6 m-auto md:w-11/12 md:flex md:flex-row-reverse md:justify-between '>
         <div className='flex place-items-center justify-center m-8 gap-8'>
           {

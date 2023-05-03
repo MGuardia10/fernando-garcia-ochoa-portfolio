@@ -1,29 +1,18 @@
 /* eslint-disable no-undef */
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import { TbLocationFilled } from 'react-icons/tb'
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 import { RxCross1 } from 'react-icons/rx'
+import { useLocalStorage } from '../hooks/useLocalStorage'
 
 export const GridProjects = ({ name, alt, imgLink, link, gridClass }) => {
   const { t } = useTranslation([name])
 
-  const [isLike, setisLike] = useState(localStorage.getItem(name))
   const [open, setopen] = useState(false)
-
-  const onClickLikeButton = () => {
-    setisLike(!isLike)
-  }
-
-  useEffect(() => {
-    if (isLike) {
-      localStorage.setItem(name, isLike)
-    } else {
-      localStorage.removeItem(name)
-    }
-  }, [isLike])
+  const { isLike, onClickLikeButton } = useLocalStorage(name)
 
   const handleOpenModalMobile = () => {
     setopen(!open)
