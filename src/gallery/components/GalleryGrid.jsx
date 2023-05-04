@@ -33,7 +33,9 @@ const GalleryGrid = ({ ImagesArr }) => {
           images={ImagesArr}
           rotatable={false}
           attribute={false}
+          drag={false}
           noNavbar
+          scalable={false}
         />
       </div>
 
