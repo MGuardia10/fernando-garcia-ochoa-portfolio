@@ -24,6 +24,7 @@ export const ThemeButton = () => {
   return (
     <>
       <button
+        aria-label='Theme Button'
         onClick={onToggleDarkMode}
         type='button'
         className='bg-gray-200 dark:bg-[#292C2F] md:bg-transparent md:dark:bg-transparent

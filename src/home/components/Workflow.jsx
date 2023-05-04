@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import ImgWorkflow from '../../assets/home/workflow.jpg'
 
 export const Workflow = () => {
   const { t } = useTranslation(['workflow'])
@@ -38,7 +37,7 @@ export const Workflow = () => {
 
         <div className='flex md:w-1/2 md:m-auto'>
           <img
-            src={ImgWorkflow}
+            src='/images/crossoverGrid/project6.webp'
             alt='interior proyecto Yogijen Poketto'
             className='object-cover'
           />

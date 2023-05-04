@@ -1,0 +1,15 @@
+{
+    "title": "Z House",
+    "sector-text": "Sector",
+    "location-text": "Localización",
+    "year-text": "Año",
+    "model-text": "Maqueta",
+    "3Dmodeling-text": "Modelado 3D",
+    "blueprints-text": "Planos",
+    "sector": "Público",
+    "location": "Leganés, Madrid, España",
+    "year": "2021",
+    "model": "Alba Sánchez",
+    "3D modeling": "Fernando García-Ochoa",
+    "blueprints": "Félix Quirós"
+}

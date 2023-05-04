@@ -1,6 +1,6 @@
 import { Hero, AboutMe, Workflow, Projects, Crossover } from '../components'
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <div className='bg-slate-50 dark:bg-[#171818]'>
       {/* Hero Section */}
@@ -21,3 +21,5 @@ export const HomePage = () => {
     </div>
   )
 }
+
+export default HomePage

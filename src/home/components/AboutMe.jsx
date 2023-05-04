@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import ImgAboutMe from '../../assets/home/aboutme.webp'
 import { CVButton } from '../../ui/components/navbar/CVButton'
 import { TbLocationFilled } from 'react-icons/tb'
 import { Link } from 'react-router-dom'
@@ -13,7 +12,7 @@ export const AboutMe = () => {
       <div className='flex flex-col m-auto mb-8 w-5/6 md:w-full md:flex-row md: md:justify-center md:place-items-center md:gap-x-5'>
         <div className='mb-5 md:w-1/2 md:m-auto'>
           <img
-            src={ImgAboutMe}
+            src='/images/home/aboutme.webp'
             alt='foto de Fernando Garcia-Ochoa'
             className='object-cover'
           />

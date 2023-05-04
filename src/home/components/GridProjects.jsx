@@ -54,7 +54,7 @@ export const GridProjects = ({ name, alt, imgLink, link, gridClass }) => {
               <span className='text-sm xl:text-base'>{t('button-grid')}</span>
             </Link>
 
-            <button onClick={onClickLikeButton} className='ml-5'>
+            <button aria-label='like' onClick={onClickLikeButton} className='ml-5'>
               {
                     (isLike)
                       ? <AiFillHeart className='text-red-500 w-6 h-6' />

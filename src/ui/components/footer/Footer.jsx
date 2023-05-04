@@ -10,7 +10,12 @@ export const Footer = () => {
         <div className='flex place-items-center justify-center m-8 gap-8'>
           {
             socialsFooter.map((social, index) => (
-              <a href={social.link} key={index} className='p-4 bg-[#292C2F] duration-200 hover:bg-[#4d5052] rounded-sm'>
+              <a
+                key={index}
+                aria-label='Social media'
+                href={social.link}
+                className='p-4 bg-[#292C2F] duration-200 hover:bg-[#4d5052] rounded-sm'
+              >
                 {social.icon}
               </a>
             ))

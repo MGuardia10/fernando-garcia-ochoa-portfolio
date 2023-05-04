@@ -1,0 +1,13 @@
+{
+    "title": "Citrohan House",
+    "sector-text": "Sector",
+    "location-text": "Location",
+    "year-text": "Year",
+    "architect-text": "Architect",
+    "renders-text": "Renders",
+    "sector": "Private",
+    "location": "Paris, France",
+    "year": "2023",
+    "architect": "Le Corbusier",
+    "renders": "Fernando García-Ochoa"
+}

@@ -18,6 +18,7 @@ export const LanguageButton = () => {
 
     <>
       <button
+        aria-label='Language Button'
         onClick={onChangeLanguage}
         type='button'
         className='bg-gray-200 dark:bg-[#292C2F] md:bg-transparent md:dark:bg-transparent

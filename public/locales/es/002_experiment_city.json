@@ -1,0 +1,15 @@
+{
+    "title": "Experiment City",
+    "sector-text": "Sector",
+    "location-text": "Localización",
+    "year-text": "Año",
+    "model-text": "Maqueta",
+    "3Dmodeling-text": "Modelado 3D",
+    "2Dmodeling-text": "Modelado 2D",
+    "sector": "Residencial",
+    "location": "Aranjuez, Madrid, España",
+    "year": "2021",
+    "model": "Daniel Vinuhesa",
+    "3Dmodeling": "Fernando García-Ochoa",
+    "2Dmodeling": "Daniel Vinuhesa"
+}

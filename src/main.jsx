@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { PortofolioApp } from './PortofolioApp'
+import 'animate.css'
 import '../i18next.config'
 import './index.css'
 

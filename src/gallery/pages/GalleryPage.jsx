@@ -1,9 +1,10 @@
 
+import { lazy } from 'react'
 import { useTranslation } from 'react-i18next'
-import { GalleryGrid } from '../components/GalleryGrid'
 import { getImagesGallery } from '../data/getImagesGallery'
+const GalleryGrid = lazy(() => import('../components/GalleryGrid'))
 
-export const GalleryPage = () => {
+const GalleryPage = () => {
   const imagesArr = getImagesGallery()
   const { t } = useTranslation(['gallery'])
 
@@ -22,3 +23,5 @@ export const GalleryPage = () => {
     </>
   )
 }
+
+export default GalleryPage

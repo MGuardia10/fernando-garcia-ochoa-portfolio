@@ -1,10 +1,11 @@
-import { Suspense } from 'react'
+import { Suspense, lazy } from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import { Spiner } from '../ui/components'
 import { HomeRoutes } from '../home/routes/HomeRoutes'
-import { HomePage } from '../home/pages/HomePage'
-import { ProjectPage } from '../projects/pages/ProjectPage'
-import { GalleryPage } from '../gallery/pages/GalleryPage'
+
+const HomePage = lazy(() => import('../home/pages/HomePage'))
+const ProjectPage = lazy(() => import('../projects/pages/ProjectPage'))
+const GalleryPage = lazy(() => import('../gallery/pages/GalleryPage'))
 
 export const router = createBrowserRouter([
   {

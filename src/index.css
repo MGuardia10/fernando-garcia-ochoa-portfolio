@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,4 +7,5 @@
 @font-face {
     font-family: BASKVILL;
     src: url('./fonts/BASKVILL.ttf') format('truetype');
+    font-display: swap;
 }
