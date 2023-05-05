@@ -7,7 +7,7 @@ export const Hero = () => {
   const { t } = useTranslation(['hero'])
 
   return (
-    <section className='relative w-full flex flex-col -mt-[4.9rem] md:h-screen md:-mt-16 md:flex-row bg-slate-50 dark:bg-[#171818] animate__animated animate__fadeIn'>
+    <section className='relative w-full flex flex-col -mt-[4.9rem] md:h-screen md:-mt-16 md:flex-row bg-slate-50 dark:bg-[#171818] animate-fadeIn'>
       <div className='md:w-6/12 md:mt-0 flex flex-col place-items-center justify-center w-5/6 m-auto h-screen '>
         {
           (theme === 'dark')

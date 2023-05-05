@@ -9,5 +9,8 @@
     "location": "Madrid, España",
     "year": "2017",
     "studio": "Elii",
-    "renders": "Fernando García-Ochoa"
+    "renders": "Fernando García-Ochoa",
+    "subtitle": "El objeto de este ejercicio es modelar un interior complejo en 3D para su posterior representación",
+    "p-1": "Para ello, se tomó como referencia el proyecto existente:",
+    "p-2": "YOJIGEN POKETTO, ESTUDIO: ELII"
 }

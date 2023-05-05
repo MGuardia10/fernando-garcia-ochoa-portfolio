@@ -24,7 +24,7 @@ export const NavLinks = ({ setOpen }) => {
         links.map(({ name, url, submenu, sublinks }) => (
           <div key={name}>
             <li onClick={() => {
-              const noClickableLinks = ['Projects', 'Crossover']
+              const noClickableLinks = ['Projects', 'Proyectos', 'Crossover']
               if (!noClickableLinks.includes(name)) {
                 const open = setOpen
                 open()
