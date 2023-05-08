@@ -1,5 +1,5 @@
 import { Suspense, lazy } from 'react'
-import { createBrowserRouter } from 'react-router-dom'
+import { Navigate, createBrowserRouter } from 'react-router-dom'
 import { Spiner } from '../ui/components'
 import { HomeRoutes } from '../home/routes/HomeRoutes'
 
@@ -23,8 +23,11 @@ export const router = createBrowserRouter([
       {
         path: 'gallery',
         element: <Suspense fallback={<Spiner />}><GalleryPage /></Suspense>
+      },
+      {
+        path: '*',
+        element: <Navigate to='/' />
       }
     ]
   }
-
 ])
